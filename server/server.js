@@ -6,7 +6,7 @@ import { MongoClient } from 'mongodb'
 //comment this out in production
 //import devBundle from './devBundle'
 
-const url = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mern-simplesetup' 
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/mern-simplesetup' 
 MongoClient.connect(url, (err, db) =>{
     console.log("connected Successfully to mongodb server")
     db.close()
